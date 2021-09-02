@@ -15,7 +15,7 @@ s = '''
 
 def 好():
     d = datetime.datetime.today()
-    if d.weekday()+1 in {5, 6, 7} and d.hour==20:
+    if d.isoweekday() in {5, 6, 7} and d.hour==20:
         return True
 
 
